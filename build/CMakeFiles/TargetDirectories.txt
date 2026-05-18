@@ -1,0 +1,5 @@
+/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/graph_app.dir
+/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/edit_cache.dir
+/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/rebuild_cache.dir
+/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/graph_app_autogen_timestamp_deps.dir
+/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/graph_app_autogen.dir
