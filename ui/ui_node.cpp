@@ -1,4 +1,4 @@
-#include "ui_node.h"
+#include "../ui_node.h"
 #include <QGraphicsScene>
 #include <QTextDocument>
 #include <QTextOption>

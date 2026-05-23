@@ -11,7 +11,7 @@
 #include <queue>
 
 #include "ui_node.h"
-#include "ui_edge.h"
+#include "ui/ui_edge.h"
 #include "data_graph.h"
 
 class graph_scene : public QGraphicsScene {

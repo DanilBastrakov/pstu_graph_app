@@ -4,7 +4,7 @@
 
 #include "adjacency_dialog.h"
 #include "floyd_widget.h"
-#include "tsp_widget.h"
+#include "tsp/tsp_widget.h"
 
 #include <QApplication>
 #include <QGraphicsTextItem>

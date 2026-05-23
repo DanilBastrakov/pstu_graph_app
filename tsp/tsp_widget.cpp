@@ -1,5 +1,5 @@
 #include "tsp_widget.h"
-#include "mainwindow.h"
+#include "../mainwindow.h"
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QCloseEvent>
