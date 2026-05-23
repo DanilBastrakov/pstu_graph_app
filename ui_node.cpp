@@ -23,6 +23,13 @@ ui_node::ui_node(int id, int weight, QGraphicsItem* parent)
     weight_text->setPos(-text_rect.width() / 2, -text_rect.height() / 2);
 }
 
+void ui_node::set_current(bool current) {
+    if (current)
+        setPen(QPen(QColor(255, 165, 0), 4));
+    else
+        setPen(QPen(Qt::darkCyan, 2));
+}
+
 void ui_node::set_highlighted(bool highlighted) {
     if (highlighted) {
         setPen(QPen(Qt::darkYellow, 4));

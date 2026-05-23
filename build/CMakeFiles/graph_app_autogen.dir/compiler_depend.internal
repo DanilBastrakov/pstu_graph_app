@@ -5,15 +5,21 @@
  /home/admin-debian/CLionProjects/graph_app/CMakeLists.txt
  /home/admin-debian/CLionProjects/graph_app/adjacency_dialog.cpp
  /home/admin-debian/CLionProjects/graph_app/adjacency_dialog.h
- /home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.2/CMakeCCompiler.cmake
- /home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.2/CMakeCXXCompiler.cmake
- /home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.2/CMakeSystem.cmake
+ /home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.3/CMakeCCompiler.cmake
+ /home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.3/CMakeCXXCompiler.cmake
+ /home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.3/CMakeSystem.cmake
  /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/moc_predefs.h
  /home/admin-debian/CLionProjects/graph_app/data_graph.cpp
  /home/admin-debian/CLionProjects/graph_app/data_graph.h
+ /home/admin-debian/CLionProjects/graph_app/floyd_widget.cpp
+ /home/admin-debian/CLionProjects/graph_app/floyd_widget.h
  /home/admin-debian/CLionProjects/graph_app/main.cpp
  /home/admin-debian/CLionProjects/graph_app/mainwindow.cpp
  /home/admin-debian/CLionProjects/graph_app/mainwindow.h
+ /home/admin-debian/CLionProjects/graph_app/tsp_solver.cpp
+ /home/admin-debian/CLionProjects/graph_app/tsp_solver.h
+ /home/admin-debian/CLionProjects/graph_app/tsp_widget.cpp
+ /home/admin-debian/CLionProjects/graph_app/tsp_widget.h
  /home/admin-debian/CLionProjects/graph_app/ui_edge.cpp
  /home/admin-debian/CLionProjects/graph_app/ui_edge.h
  /home/admin-debian/CLionProjects/graph_app/ui_node.cpp
@@ -304,6 +310,7 @@
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QRectF
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
@@ -311,6 +318,7 @@
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_cxx11.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h
@@ -364,6 +372,7 @@
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
@@ -406,6 +415,7 @@
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneMouseEvent
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsTextItem
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsView
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTableWidget
@@ -421,6 +431,7 @@
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicssceneevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsview.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h

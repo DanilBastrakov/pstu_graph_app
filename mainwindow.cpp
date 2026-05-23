@@ -3,6 +3,8 @@
 #include <iostream>
 
 #include "adjacency_dialog.h"
+#include "floyd_widget.h"
+#include "tsp_widget.h"
 
 #include <QApplication>
 #include <QGraphicsTextItem>
@@ -76,6 +78,114 @@ void graph_scene::highlight_path(const QVector<int>& node_ids) {
         node->set_highlighted(false);
     for (int id : node_ids)
         current_path_to_highlight.push(id);
+}
+
+void graph_scene::set_floyd_result(const std::vector<int>& final_dist,
+                                    const std::vector<int>& final_parent) {
+    distances = final_dist;
+    parent = final_parent;
+}
+
+void graph_scene::floyd_reset_highlights() {
+    for (auto* node : nodes) {
+        node->set_highlighted(false);
+        node->set_visited(false);
+        node->set_info_text(QString::number(node->get_id()));
+    }
+    for (auto* edge : edges) {
+        edge->set_highlighted(false);
+    }
+}
+
+void graph_scene::floyd_highlight_step(int k, int i, int j,
+                                       const std::vector<std::vector<int>>& dist,
+                                       int start_node) {
+    int n = nodes.size();
+
+    if (k >= 0 && k < n)
+        nodes[k]->set_highlighted(true);
+
+    if (i >= 0 && i < n) {
+        nodes[i]->set_visited(true);
+        if (dist[start_node][i] < INT_MAX / 2)
+            nodes[i]->set_info_text(
+                QString("Node %1\nd=%2").arg(i).arg(dist[start_node][i]));
+    }
+    if (j >= 0 && j < n) {
+        nodes[j]->set_visited(true);
+        if (dist[start_node][j] < INT_MAX / 2)
+            nodes[j]->set_info_text(
+                QString("Node %1\nd=%2").arg(j).arg(dist[start_node][j]));
+    }
+
+    for (auto* edge : edges) {
+        int u = edge->get_start_node()->get_id();
+        int v = edge->get_end_node()->get_id();
+        if ((u == i && v == k) || (u == k && v == j))
+            edge->set_highlighted(true);
+    }
+}
+
+void graph_scene::tsp_reset_highlights() {
+    for (auto* node : nodes) {
+        node->set_current(false);
+        node->set_highlighted(false);
+        node->set_visited(false);
+        node->set_path(false);
+        node->set_info_text(QString::number(node->get_id()));
+    }
+    for (auto* edge : edges) {
+        edge->set_highlighted(false);
+        edge->set_path_edge(false);
+    }
+}
+
+void graph_scene::tsp_highlight_state(const std::vector<int>& partial_tour,
+                                       const std::vector<int>& best_tour,
+                                       int last_node) {
+    for (auto* node : nodes) {
+        node->set_current(false);
+        node->set_highlighted(false);
+        node->set_visited(false);
+        node->set_path(false);
+        node->set_info_text(QString::number(node->get_id()));
+    }
+    for (auto* edge : edges) {
+        edge->set_highlighted(false);
+        edge->set_path_edge(false);
+    }
+
+    for (size_t i = 0; i + 1 < best_tour.size(); ++i) {
+        int u = best_tour[i];
+        int v = best_tour[i + 1];
+        for (auto* edge : edges) {
+            if (edge->get_start_node()->get_id() == u &&
+                edge->get_end_node()->get_id() == v) {
+                edge->set_path_edge(true);
+            }
+        }
+    }
+
+    for (size_t i = 0; i + 1 < partial_tour.size(); ++i) {
+        int u = partial_tour[i];
+        int v = partial_tour[i + 1];
+        for (auto* edge : edges) {
+            if (edge->get_start_node()->get_id() == u &&
+                edge->get_end_node()->get_id() == v) {
+                edge->set_highlighted(true);
+            }
+        }
+    }
+
+    for (int id : partial_tour) {
+        if (id >= 0 && id < nodes.size()) {
+            nodes[id]->set_visited(true);
+            nodes[id]->set_info_text(QString::number(id));
+        }
+    }
+
+    if (last_node >= 0 && last_node < nodes.size())
+        nodes[last_node]->set_current(true);
 }
 
 void graph_scene::highlight_edge(int from, int to) {
@@ -212,6 +322,19 @@ void graph_scene::generate_random_graph() {
     set_graph_data(matrix);
 }
 
+void graph_scene::generate_tsp_graph() {
+    int n = rand() % 4 + 5;
+    QVector matrix(n, QVector(n, 0));
+    for (int i = 0; i < n; ++i) {
+        for (int j = i + 1; j < n; ++j) {
+            int w = rand() % 20 + 1;
+            matrix[i][j] = w;
+            matrix[j][i] = w;
+        }
+    }
+    set_graph_data(matrix);
+}
+
 void graph_scene::run_bfs(int start, int end) {
     data_graph g;
     int n = adjacency_matrix.size();
@@ -334,10 +457,12 @@ main_window::main_window(QWidget* parent)
     edit_btn = new QPushButton("Edit Adjacency Matrix");
     random_graph_btn = new QPushButton("Generate Random Graph");
     tree_btn = new QPushButton("Generate Balanced Tree");
+    tsp_graph_btn = new QPushButton("Generate TSP Graph");
     bfs_btn = new QPushButton("BFS");
     dfs_btn = new QPushButton("DFS");
     dijkstra_btn = new QPushButton("Dijkstra");
     floyd_btn = new QPushButton("Floyd-Warshall");
+    tsp_btn = new QPushButton("TSP");
     reset_btn = new QPushButton("Reset");
     next_btn = new QPushButton("Next");
 
@@ -346,10 +471,12 @@ main_window::main_window(QWidget* parent)
     edit_btn->setMinimumHeight(36);
     random_graph_btn->setMinimumHeight(36);
     tree_btn->setMinimumHeight(36);
+    tsp_graph_btn->setMinimumHeight(36);
     bfs_btn->setMinimumHeight(36);
     dfs_btn->setMinimumHeight(36);
     dijkstra_btn->setMinimumHeight(36);
     floyd_btn->setMinimumHeight(36);
+    tsp_btn->setMinimumHeight(36);
     reset_btn->setMinimumHeight(36);
     next_btn->setMinimumHeight(36);
 
@@ -358,10 +485,12 @@ main_window::main_window(QWidget* parent)
     sidebar_layout->addWidget(edit_btn);
     sidebar_layout->addWidget(random_graph_btn);
     sidebar_layout->addWidget(tree_btn);
+    sidebar_layout->addWidget(tsp_graph_btn);
     sidebar_layout->addWidget(bfs_btn);
     sidebar_layout->addWidget(dfs_btn);
     sidebar_layout->addWidget(dijkstra_btn);
     sidebar_layout->addWidget(floyd_btn);
+    sidebar_layout->addWidget(tsp_btn);
     sidebar_layout->addWidget(reset_btn);
     sidebar_layout->addWidget(next_btn);
     sidebar_layout->addStretch();
@@ -427,6 +556,14 @@ main_window::main_window(QWidget* parent)
         }
     });
 
+    connect(tsp_graph_btn, &QPushButton::clicked, this, [this]() {
+        graph_scene_ptr->generate_tsp_graph();
+        QMessageBox::information(this, "TSP Graph",
+            QString("Generated a complete graph with %1 nodes.\n"
+                    "Click 'TSP' to solve.")
+                .arg(graph_scene_ptr->get_adjacency_matrix().size()));
+    });
+
     auto input_dialogue = [this]() -> std::pair<int, int> {
         int n = graph_scene_ptr->get_adjacency_matrix().size();
         if (n == 0) return {-1, -1};
@@ -466,7 +603,47 @@ main_window::main_window(QWidget* parent)
 
     connect(floyd_btn, &QPushButton::clicked, this, [this, input_dialogue]() {
         auto [start, end] = input_dialogue();
-        graph_scene_ptr->run_floyd(start, end);
+        if (start < 0 || end < 0) return;
+
+        auto* widget = new floyd_widget(
+            graph_scene_ptr->get_adjacency_matrix(),
+            graph_scene_ptr, start, end, this);
+        widget->setAttribute(Qt::WA_DeleteOnClose);
+        widget->show();
+    });
+
+    connect(tsp_btn, &QPushButton::clicked, this, [this]() {
+        int n = graph_scene_ptr->get_adjacency_matrix().size();
+        if (n == 0) {
+            QMessageBox::information(this, "TSP", "No nodes in the graph.");
+            return;
+        }
+        if (n < 3) {
+            QMessageBox::warning(this, "TSP", "Need at least 3 nodes.");
+            return;
+        }
+        if (n > 8) {
+            QMessageBox::warning(this, "TSP",
+                "Maximum 8 nodes for Branch & Bound.\n"
+                "Current graph has " + QString::number(n) + " nodes.");
+            return;
+        }
+
+        QStringList items;
+        for (int i = 0; i < n; ++i)
+            items << QString("Node %1").arg(i);
+
+        bool ok = false;
+        QString start_str = QInputDialog::getItem(
+            this, "TSP Start", "Starting node:", items, 0, false, &ok);
+        if (!ok) return;
+        int start = items.indexOf(start_str);
+
+        auto* widget = new tsp_widget(
+            graph_scene_ptr->get_adjacency_matrix(),
+            graph_scene_ptr, start, this);
+        widget->setAttribute(Qt::WA_DeleteOnClose);
+        widget->show();
     });
 
     connect(reset_btn, &QPushButton::clicked, this, [this]() {

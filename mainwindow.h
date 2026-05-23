@@ -25,6 +25,8 @@ public:
 
     void generate_random_graph();
 
+    void generate_tsp_graph();
+
     void generate_bt(int count);
 
     void run_bfs(int start, int end);
@@ -35,6 +37,16 @@ public:
     [[nodiscard]] bool can_highlight_next() const { return !current_path_to_highlight.empty(); }
     void highlight_next();
     void highlight_edge(int from, int to);
+    void floyd_highlight_step(int k, int i, int j,
+                              const std::vector<std::vector<int>>& dist,
+                              int start_node);
+    void floyd_reset_highlights();
+    void set_floyd_result(const std::vector<int>& final_dist,
+                           const std::vector<int>& final_parent);
+    void tsp_highlight_state(const std::vector<int>& partial_tour,
+                              const std::vector<int>& best_tour,
+                              int last_node);
+    void tsp_reset_highlights();
 
 public slots:
     void highlight_path(const QVector<int>& node_ids);
@@ -79,10 +91,12 @@ private:
     QPushButton* edit_btn;
     QPushButton* random_graph_btn;
     QPushButton* tree_btn;
+    QPushButton* tsp_graph_btn;
     QPushButton* bfs_btn;
     QPushButton* dfs_btn;
     QPushButton* dijkstra_btn;
     QPushButton* floyd_btn;
+    QPushButton* tsp_btn;
     QPushButton* reset_btn;
     QPushButton* next_btn;
 };

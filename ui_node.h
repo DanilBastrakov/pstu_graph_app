@@ -18,6 +18,7 @@ public:
     void set_highlighted(bool highlighted);
     void set_visited(bool visited);
     void set_path(bool path);
+    void set_current(bool current);
     void set_info_text(const QString& text);
     [[nodiscard]] int get_id() const { return node_id; }
     [[nodiscard]] int get_weight() const { return node_weight; }

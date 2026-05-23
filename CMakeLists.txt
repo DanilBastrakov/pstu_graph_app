@@ -24,6 +24,12 @@ add_executable(graph_app main.cpp
         mainwindow.cpp
         adjacency_dialog.h
         adjacency_dialog.cpp
+        floyd_widget.h
+        floyd_widget.cpp
+        tsp_solver.h
+        tsp_solver.cpp
+        tsp_widget.h
+        tsp_widget.cpp
 )
 target_link_libraries(graph_app
         Qt5::Core

@@ -210,6 +210,30 @@ data_graph.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/data_graph.cpp.s
 .PHONY : data_graph.cpp.s
 
+floyd_widget.o: floyd_widget.cpp.o
+.PHONY : floyd_widget.o
+
+# target to build an object file
+floyd_widget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/floyd_widget.cpp.o
+.PHONY : floyd_widget.cpp.o
+
+floyd_widget.i: floyd_widget.cpp.i
+.PHONY : floyd_widget.i
+
+# target to preprocess a source file
+floyd_widget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/floyd_widget.cpp.i
+.PHONY : floyd_widget.cpp.i
+
+floyd_widget.s: floyd_widget.cpp.s
+.PHONY : floyd_widget.s
+
+# target to generate assembly for a file
+floyd_widget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/floyd_widget.cpp.s
+.PHONY : floyd_widget.cpp.s
+
 graph_app_autogen/mocs_compilation.o: graph_app_autogen/mocs_compilation.cpp.o
 .PHONY : graph_app_autogen/mocs_compilation.o
 
@@ -282,6 +306,54 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+tsp_solver.o: tsp_solver.cpp.o
+.PHONY : tsp_solver.o
+
+# target to build an object file
+tsp_solver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/tsp_solver.cpp.o
+.PHONY : tsp_solver.cpp.o
+
+tsp_solver.i: tsp_solver.cpp.i
+.PHONY : tsp_solver.i
+
+# target to preprocess a source file
+tsp_solver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/tsp_solver.cpp.i
+.PHONY : tsp_solver.cpp.i
+
+tsp_solver.s: tsp_solver.cpp.s
+.PHONY : tsp_solver.s
+
+# target to generate assembly for a file
+tsp_solver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/tsp_solver.cpp.s
+.PHONY : tsp_solver.cpp.s
+
+tsp_widget.o: tsp_widget.cpp.o
+.PHONY : tsp_widget.o
+
+# target to build an object file
+tsp_widget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/tsp_widget.cpp.o
+.PHONY : tsp_widget.cpp.o
+
+tsp_widget.i: tsp_widget.cpp.i
+.PHONY : tsp_widget.i
+
+# target to preprocess a source file
+tsp_widget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/tsp_widget.cpp.i
+.PHONY : tsp_widget.cpp.i
+
+tsp_widget.s: tsp_widget.cpp.s
+.PHONY : tsp_widget.s
+
+# target to generate assembly for a file
+tsp_widget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_app.dir/build.make CMakeFiles/graph_app.dir/tsp_widget.cpp.s
+.PHONY : tsp_widget.cpp.s
+
 ui_edge.o: ui_edge.cpp.o
 .PHONY : ui_edge.o
 
@@ -348,6 +420,9 @@ help:
 	@echo "... data_graph.o"
 	@echo "... data_graph.i"
 	@echo "... data_graph.s"
+	@echo "... floyd_widget.o"
+	@echo "... floyd_widget.i"
+	@echo "... floyd_widget.s"
 	@echo "... graph_app_autogen/mocs_compilation.o"
 	@echo "... graph_app_autogen/mocs_compilation.i"
 	@echo "... graph_app_autogen/mocs_compilation.s"
@@ -357,6 +432,12 @@ help:
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... tsp_solver.o"
+	@echo "... tsp_solver.i"
+	@echo "... tsp_solver.s"
+	@echo "... tsp_widget.o"
+	@echo "... tsp_widget.i"
+	@echo "... tsp_widget.s"
 	@echo "... ui_edge.o"
 	@echo "... ui_edge.i"
 	@echo "... ui_edge.s"

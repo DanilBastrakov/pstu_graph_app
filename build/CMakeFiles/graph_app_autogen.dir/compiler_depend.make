@@ -4,15 +4,21 @@
 graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLists.txt \
   /home/admin-debian/CLionProjects/graph_app/adjacency_dialog.cpp \
   /home/admin-debian/CLionProjects/graph_app/adjacency_dialog.h \
-  CMakeFiles/4.3.2/CMakeCCompiler.cmake \
-  CMakeFiles/4.3.2/CMakeCXXCompiler.cmake \
-  CMakeFiles/4.3.2/CMakeSystem.cmake \
+  CMakeFiles/4.3.3/CMakeCCompiler.cmake \
+  CMakeFiles/4.3.3/CMakeCXXCompiler.cmake \
+  CMakeFiles/4.3.3/CMakeSystem.cmake \
   graph_app_autogen/moc_predefs.h \
   /home/admin-debian/CLionProjects/graph_app/data_graph.cpp \
   /home/admin-debian/CLionProjects/graph_app/data_graph.h \
+  /home/admin-debian/CLionProjects/graph_app/floyd_widget.cpp \
+  /home/admin-debian/CLionProjects/graph_app/floyd_widget.h \
   /home/admin-debian/CLionProjects/graph_app/main.cpp \
   /home/admin-debian/CLionProjects/graph_app/mainwindow.cpp \
   /home/admin-debian/CLionProjects/graph_app/mainwindow.h \
+  /home/admin-debian/CLionProjects/graph_app/tsp_solver.cpp \
+  /home/admin-debian/CLionProjects/graph_app/tsp_solver.h \
+  /home/admin-debian/CLionProjects/graph_app/tsp_widget.cpp \
+  /home/admin-debian/CLionProjects/graph_app/tsp_widget.h \
   /home/admin-debian/CLionProjects/graph_app/ui_edge.cpp \
   /home/admin-debian/CLionProjects/graph_app/ui_edge.h \
   /home/admin-debian/CLionProjects/graph_app/ui_node.cpp \
@@ -303,6 +309,7 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QRectF \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h \
@@ -310,6 +317,7 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_cxx11.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h \
@@ -363,6 +371,7 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h \
@@ -405,6 +414,7 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneMouseEvent \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsTextItem \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsView \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTableWidget \
@@ -420,6 +430,7 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicssceneevent.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsview.h \
+  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
@@ -530,8 +541,6 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 
 /usr/lib/linux/uapi/x86/asm/unistd.h:
 
-/usr/lib/linux/uapi/x86/asm/posix_types_64.h:
-
 /usr/lib/linux/uapi/x86/asm/errno.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h:
@@ -540,8 +549,6 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h:
@@ -549,8 +556,6 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtableview.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyleoption.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h:
 
@@ -585,6 +590,8 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel:
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsTextItem:
 
@@ -622,10 +629,6 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake:
-
-/usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h:
@@ -650,6 +653,12 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake:
+
+/usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h:
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsysinfo.h:
@@ -668,8 +677,6 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qsharedpointer.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h:
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qregularexpression.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qregexp.h:
@@ -684,7 +691,25 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h:
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h:
+
 /usr/include/c++/14/bits/vector.tcc:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h:
+
+/usr/include/c++/14/bits/uses_allocator.h:
 
 /usr/include/c++/14/bits/uniform_int_dist.h:
 
@@ -709,10 +734,6 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 /usr/include/c++/14/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/14/bits/ranges_algobase.h:
-
-/usr/include/c++/14/climits:
-
-/usr/include/c++/14/bits/range_access.h:
 
 /usr/include/c++/14/bits/std_mutex.h:
 
@@ -756,6 +777,8 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h:
 
+CMakeFiles/4.3.3/CMakeSystem.cmake:
+
 /usr/include/c++/14/string:
 
 /usr/include/c++/14/bits/out_ptr.h:
@@ -772,15 +795,15 @@ graph_app_autogen/timestamp: /home/admin-debian/CLionProjects/graph_app/CMakeLis
 
 /usr/include/c++/14/bits/node_handle.h:
 
-CMakeFiles/4.3.2/CMakeSystem.cmake:
-
 /usr/include/c++/14/bits/nested_exception.h:
 
 /snap/cmake/current/bin/cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
-/usr/include/c++/14/bits/move_only_function.h:
+/usr/include/c++/14/bits/range_access.h:
+
+/usr/include/c++/14/climits:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h:
 
@@ -808,9 +831,9 @@ CMakeFiles/4.3.2/CMakeSystem.cmake:
 
 /usr/include/c++/14/bits/ios_base.h:
 
-/usr/include/c++/14/bits/functional_hash.h:
-
 /usr/include/c++/14/bits/cxxabi_forced.h:
+
+/usr/include/c++/14/bits/functional_hash.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h:
 
@@ -818,17 +841,9 @@ CMakeFiles/4.3.2/CMakeSystem.cmake:
 
 /usr/include/c++/14/bits/invoke.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollarea.h:
-
-/usr/include/c++/14/bits/functexcept.h:
-
 /usr/include/c++/14/bits/memoryfwd.h:
 
-/usr/include/c++/14/bits/exception_defines.h:
-
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/c++/14/charconv:
 
 /usr/lib/linux/uapi/x86/asm/posix_types.h:
 
@@ -840,35 +855,19 @@ CMakeFiles/4.3.2/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
-/usr/include/c++/14/bits/stl_numeric.h:
+/usr/include/c++/14/bits/cxxabi_init_exception.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake:
+
+/usr/include/c++/14/ext/string_conversions.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/14/bits/stl_queue.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/c++/14/cstddef:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/c++/14/bits/postypes.h:
-
-/usr/include/c++/14/bits/allocated_ptr.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h:
-
-/usr/include/c++/14/bits/ranges_cmp.h:
-
-/usr/include/c++/14/bits/list.tcc:
-
-/usr/include/c++/14/bits/stl_heap.h:
-
-/usr/include/c++/14/debug/assertions.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake:
-
-/usr/include/c++/14/cerrno:
-
-/snap/cmake/current/share/cmake-4.3/Modules/Compiler/GNU.cmake:
 
 /snap/cmake/current/share/cmake-4.3/Modules/Compiler/GNU-CXX.cmake:
 
@@ -882,31 +881,19 @@ CMakeFiles/4.3.2/CMakeSystem.cmake:
 
 graph_app_autogen/moc_predefs.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h:
 
-CMakeFiles/4.3.2/CMakeCXXCompiler.cmake:
+/usr/include/c++/14/bits/ranges_cmp.h:
 
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+/usr/include/c++/14/bits/postypes.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qlist.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qslider.h:
-
-/usr/include/c++/14/bits/uses_allocator.h:
+/usr/include/c++/14/bits/allocated_ptr.h:
 
 /snap/cmake/current/share/cmake-4.3/Modules/CMakeParseArguments.cmake:
 
 /usr/include/asm-generic/errno.h:
 
 /snap/cmake/current/share/cmake-4.3/Modules/Platform/UnixPaths.cmake:
-
-/usr/include/c++/14/bits/cxxabi_init_exception.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake:
-
-/usr/include/c++/14/ext/string_conversions.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/c++/14/bits/stl_multimap.h:
 
@@ -930,11 +917,17 @@ CMakeFiles/4.3.2/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/14/stdlib.h:
 
-/usr/include/features.h:
+/snap/cmake/current/share/cmake-4.3/Modules/Compiler/GNU.cmake:
 
-/snap/cmake/current/share/cmake-4.3/Modules/Linker/GNU-CXX.cmake:
+/usr/include/c++/14/bits/list.tcc:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h:
+/usr/include/c++/14/bits/stl_heap.h:
+
+/usr/include/c++/14/debug/assertions.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake:
+
+/usr/include/c++/14/cerrno:
 
 /usr/include/c++/14/bits/localefwd.h:
 
@@ -942,19 +935,27 @@ CMakeFiles/4.3.2/CMakeCXXCompiler.cmake:
 
 /snap/cmake/current/share/cmake-4.3/Modules/CMakeCInformation.cmake:
 
-/usr/include/c++/14/bits/ranges_uninitialized.h:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h:
+/usr/include/c++/14/bits/char_traits.h:
 
-/home/admin-debian/CLionProjects/graph_app/data_graph.h:
+/home/admin-debian/CLionProjects/graph_app/ui_edge.cpp:
 
-/usr/include/c++/14/array:
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
-CMakeFiles/4.3.2/CMakeCCompiler.cmake:
+/usr/include/c++/14/bits/move_only_function.h:
 
-/usr/include/c++/14/bits/basic_string.h:
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h:
 
-/home/admin-debian/CLionProjects/graph_app/adjacency_dialog.cpp:
+/home/admin-debian/CLionProjects/graph_app/tsp_widget.h:
+
+/usr/include/c++/14/memory:
+
+/home/admin-debian/CLionProjects/graph_app/tsp_solver.h:
+
+/usr/include/c++/14/bits/cpp_type_traits.h:
+
+/usr/include/c++/14/pstl/glue_numeric_defs.h:
 
 /usr/include/c++/14/bits/stl_iterator_base_types.h:
 
@@ -968,7 +969,27 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /usr/include/c++/14/cwchar:
 
-/usr/include/c++/14/bits/alloc_traits.h:
+/usr/lib/linux/uapi/x86/asm/posix_types_64.h:
+
+/home/admin-debian/CLionProjects/graph_app/tsp_widget.cpp:
+
+/usr/include/pthread.h:
+
+/usr/include/c++/14/bits/locale_classes.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h:
+
+/home/admin-debian/CLionProjects/graph_app/mainwindow.cpp:
+
+/usr/include/c++/14/bits/ranges_uninitialized.h:
+
+/snap/cmake/current/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
+
+CMakeFiles/4.3.3/CMakeCCompiler.cmake:
+
+/usr/include/c++/14/array:
 
 /usr/include/c++/14/stdexcept:
 
@@ -976,9 +997,59 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h:
 
+/usr/include/c++/14/bits/alloc_traits.h:
+
+/usr/include/c++/14/bits/move.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h:
+
+/home/admin-debian/CLionProjects/graph_app/CMakeLists.txt:
+
+/usr/include/features-time64.h:
+
+/usr/include/c++/14/atomic:
+
+/home/admin-debian/CLionProjects/graph_app/ui_node.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h:
+
+/home/admin-debian/CLionProjects/graph_app/data_graph.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollarea.h:
+
+/usr/include/c++/14/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstyle.h:
+
+/home/admin-debian/CLionProjects/graph_app/tsp_solver.cpp:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h:
+
+/usr/include/c++/14/bits/stl_numeric.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qset.h:
+
+/home/admin-debian/CLionProjects/graph_app/floyd_widget.h:
+
+/usr/include/c++/14/bits/basic_string.h:
+
+/home/admin-debian/CLionProjects/graph_app/adjacency_dialog.cpp:
+
+/usr/include/c++/14/bits/exception_defines.h:
+
+/usr/include/wctype.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h:
+
 /home/admin-debian/CLionProjects/graph_app/main.cpp:
 
-/snap/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCLinkerInformation.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake:
+
+/home/admin-debian/CLionProjects/graph_app/mainwindow.h:
 
 /usr/include/c++/14/bits/basic_ios.tcc:
 
@@ -986,27 +1057,17 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /usr/include/c++/14/algorithm:
 
-/home/admin-debian/CLionProjects/graph_app/ui_node.h:
+/snap/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCLinkerInformation.cmake:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake:
+/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake:
 
-/home/admin-debian/CLionProjects/graph_app/mainwindow.h:
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
-/snap/cmake/current/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
+/usr/include/features.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h:
+/snap/cmake/current/share/cmake-4.3/Modules/Linker/GNU-CXX.cmake:
 
-/usr/include/c++/14/compare:
-
-/usr/include/c++/14/bits/predefined_ops.h:
-
-/usr/include/c++/14/bits/move.h:
-
-/home/admin-debian/CLionProjects/graph_app/CMakeLists.txt:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/14/atomic:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h:
 
@@ -1020,11 +1081,13 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /usr/include/c++/14/cctype:
 
+/home/admin-debian/CLionProjects/graph_app/floyd_widget.cpp:
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h:
+
 /snap/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Linux-GNU-CXX.cmake:
-
-/usr/include/wctype.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcompilerdetection.h:
 
 /snap/cmake/current/share/cmake-4.3/Modules/Platform/Linux-GNU-C.cmake:
 
@@ -1088,8 +1151,6 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake:
 
 /usr/include/c++/14/bits/hash_bytes.h:
@@ -1114,9 +1175,7 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /usr/include/c++/14/bits/ostream_insert.h:
 
-/usr/include/c++/14/clocale:
-
-/usr/include/x86_64-linux-gnu/bits/locale.h:
+CMakeFiles/4.3.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
@@ -1126,39 +1185,31 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /usr/include/c++/14/bits/algorithmfwd.h:
 
-/home/admin-debian/CLionProjects/graph_app/ui_edge.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qscopedpointer.h:
-
-/usr/include/c++/14/bits/char_traits.h:
-
 /usr/include/c++/14/bits/align.h:
 
 /usr/include/c++/14/bits/atomic_lockfree_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
-/usr/include/c++/14/bits/cpp_type_traits.h:
-
-/usr/include/c++/14/pstl/glue_numeric_defs.h:
-
-/home/admin-debian/CLionProjects/graph_app/ui_edge.h:
-
 /usr/include/c++/14/vector:
 
 /usr/include/c++/14/bits/atomic_base.h:
 
+/home/admin-debian/CLionProjects/graph_app/ui_edge.h:
+
 /usr/include/c++/14/bits/c++0x_warning.h:
 
-/usr/include/c++/14/bits/locale_classes.tcc:
+/usr/include/c++/14/charconv:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h:
+/usr/include/c++/14/clocale:
 
-/home/admin-debian/CLionProjects/graph_app/mainwindow.cpp:
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h:
+
+/usr/include/c++/14/bits/predefined_ops.h:
+
+/usr/include/c++/14/compare:
 
 /usr/include/c++/14/concepts:
 
@@ -1212,11 +1263,7 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /usr/include/c++/14/iterator:
 
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qnamespace.h:
-
 /usr/include/c++/14/limits:
-
-/usr/include/c++/14/memory:
 
 /usr/include/c++/14/new:
 
@@ -1226,9 +1273,9 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5GuiConfig.cmake:
 
-/snap/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake:
-
 /snap/cmake/current/share/cmake-4.3/Modules/CMakeGenericSystem.cmake:
+
+/snap/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake:
 
 /usr/include/c++/14/optional:
 
@@ -1255,8 +1302,6 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QString:
 
 /usr/include/c++/14/string_view:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h:
 
 /usr/include/c++/14/tuple:
 
@@ -1297,8 +1342,6 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qitemselectionmodel.h:
 
 /usr/include/locale.h:
-
-/usr/include/pthread.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h:
 
@@ -1416,15 +1459,13 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake:
-
-/usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h:
-
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject:
 
 /usr/include/c++/14/bits/deque.tcc:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF:
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h:
 
@@ -1433,10 +1474,6 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabbar.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h:
 
@@ -1459,7 +1496,3 @@ CMakeFiles/4.3.2/CMakeCCompiler.cmake:
 /usr/include/c++/14/typeinfo:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qiterator.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qlogging.h:
-
-/usr/include/x86_64-linux-gnu/qt5/QtCore/qnumeric.h:

@@ -158,3 +158,55 @@ pair<vector<int>, vector<int>> data_graph::floyd_warshall(int start, int end) {
     path.push_back(end);
     return {path, path};
 }
+
+vector<floyd_step_info> data_graph::floyd_warshall_steps(int start, int end) {
+    int n = adjacency_matrix.size();
+    vector<vector<int>> dist = adjacency_matrix;
+    vector<vector<int>> next(n, vector<int>(n, -1));
+
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            if (i == j) {
+                dist[i][j] = 0;
+            } else if (dist[i][j] == 0) {
+                dist[i][j] = INT_MAX / 2;
+            } else {
+                next[i][j] = j;
+            }
+        }
+    }
+
+    vector<floyd_step_info> steps;
+    steps.push_back({-1, -1, -1, dist, next, false, 0, 0});
+
+    for (int k = 0; k < n; ++k) {
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j < n; ++j) {
+                int old_val = dist[i][j];
+                bool updated = false;
+                if (dist[i][k] + dist[k][j] < dist[i][j]) {
+                    dist[i][j] = dist[i][k] + dist[k][j];
+                    next[i][j] = next[i][k];
+                    updated = true;
+                }
+                steps.push_back({k, i, j, dist, next, updated, old_val, dist[i][j]});
+            }
+        }
+    }
+
+    last_dist.resize(n);
+    for (int i = 0; i < n; ++i)
+        last_dist[i] = dist[start][i];
+    last_parent.assign(n, -1);
+    for (int i = 0; i < n; ++i) {
+        if (next[start][i] == -1) continue;
+        int v = start;
+        while (v != i) {
+            int u = next[v][i];
+            last_parent[u] = v;
+            v = u;
+        }
+    }
+
+    return steps;
+}

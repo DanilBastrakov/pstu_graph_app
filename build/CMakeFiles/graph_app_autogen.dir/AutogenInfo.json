@@ -7,11 +7,11 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/admin-debian/CLionProjects/graph_app/CMakeLists.txt",
-		"/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.2/CMakeSystem.cmake",
+		"/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.3/CMakeSystem.cmake",
 		"/snap/cmake/current/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/snap/cmake/current/share/cmake-4.3/Modules/Platform/Linux-Initialize.cmake",
-		"/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.2/CMakeCCompiler.cmake",
-		"/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.2/CMakeCXXCompiler.cmake",
+		"/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.3/CMakeCCompiler.cmake",
+		"/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles/4.3.3/CMakeCXXCompiler.cmake",
 		"/snap/cmake/current/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake",
 		"/snap/cmake/current/share/cmake-4.3/Modules/CMakeGenericSystem.cmake",
 		"/snap/cmake/current/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake",
@@ -106,9 +106,27 @@
 			null
 		],
 		[
+			"/home/admin-debian/CLionProjects/graph_app/floyd_widget.h",
+			"Mu",
+			"EWIEGA46WW/moc_floyd_widget.cpp",
+			null
+		],
+		[
 			"/home/admin-debian/CLionProjects/graph_app/mainwindow.h",
 			"Mu",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/home/admin-debian/CLionProjects/graph_app/tsp_solver.h",
+			"Mu",
+			"EWIEGA46WW/moc_tsp_solver.cpp",
+			null
+		],
+		[
+			"/home/admin-debian/CLionProjects/graph_app/tsp_widget.h",
+			"Mu",
+			"EWIEGA46WW/moc_tsp_widget.cpp",
 			null
 		],
 		[
@@ -185,9 +203,24 @@
 			"Mu",
 			null
 		],
+		[
+			"/home/admin-debian/CLionProjects/graph_app/floyd_widget.cpp",
+			"Mu",
+			null
+		],
 		[ "/home/admin-debian/CLionProjects/graph_app/main.cpp", "Mu", null ],
 		[
 			"/home/admin-debian/CLionProjects/graph_app/mainwindow.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/admin-debian/CLionProjects/graph_app/tsp_solver.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/admin-debian/CLionProjects/graph_app/tsp_widget.cpp",
 			"Mu",
 			null
 		],

@@ -9,6 +9,9 @@ graph_app: \
   CMakeFiles/graph_app.dir/ui_edge.cpp.o \
   CMakeFiles/graph_app.dir/mainwindow.cpp.o \
   CMakeFiles/graph_app.dir/adjacency_dialog.cpp.o \
+  CMakeFiles/graph_app.dir/floyd_widget.cpp.o \
+  CMakeFiles/graph_app.dir/tsp_solver.cpp.o \
+  CMakeFiles/graph_app.dir/tsp_widget.cpp.o \
   /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.15 \
   /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.15 \
   /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.15 \
@@ -122,6 +125,12 @@ CMakeFiles/graph_app.dir/ui_edge.cpp.o:
 CMakeFiles/graph_app.dir/mainwindow.cpp.o:
 
 CMakeFiles/graph_app.dir/adjacency_dialog.cpp.o:
+
+CMakeFiles/graph_app.dir/floyd_widget.cpp.o:
+
+CMakeFiles/graph_app.dir/tsp_solver.cpp.o:
+
+CMakeFiles/graph_app.dir/tsp_widget.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.15:
 

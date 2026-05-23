@@ -170,6 +170,48 @@ CMakeFiles/graph_app.dir/adjacency_dialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/graph_app.dir/adjacency_dialog.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin-debian/CLionProjects/graph_app/adjacency_dialog.cpp -o CMakeFiles/graph_app.dir/adjacency_dialog.cpp.s
 
+CMakeFiles/graph_app.dir/floyd_widget.cpp.o: CMakeFiles/graph_app.dir/flags.make
+CMakeFiles/graph_app.dir/floyd_widget.cpp.o: /home/admin-debian/CLionProjects/graph_app/floyd_widget.cpp
+CMakeFiles/graph_app.dir/floyd_widget.cpp.o: CMakeFiles/graph_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/graph_app.dir/floyd_widget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_app.dir/floyd_widget.cpp.o -MF CMakeFiles/graph_app.dir/floyd_widget.cpp.o.d -o CMakeFiles/graph_app.dir/floyd_widget.cpp.o -c /home/admin-debian/CLionProjects/graph_app/floyd_widget.cpp
+
+CMakeFiles/graph_app.dir/floyd_widget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/graph_app.dir/floyd_widget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin-debian/CLionProjects/graph_app/floyd_widget.cpp > CMakeFiles/graph_app.dir/floyd_widget.cpp.i
+
+CMakeFiles/graph_app.dir/floyd_widget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/graph_app.dir/floyd_widget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin-debian/CLionProjects/graph_app/floyd_widget.cpp -o CMakeFiles/graph_app.dir/floyd_widget.cpp.s
+
+CMakeFiles/graph_app.dir/tsp_solver.cpp.o: CMakeFiles/graph_app.dir/flags.make
+CMakeFiles/graph_app.dir/tsp_solver.cpp.o: /home/admin-debian/CLionProjects/graph_app/tsp_solver.cpp
+CMakeFiles/graph_app.dir/tsp_solver.cpp.o: CMakeFiles/graph_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/graph_app.dir/tsp_solver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_app.dir/tsp_solver.cpp.o -MF CMakeFiles/graph_app.dir/tsp_solver.cpp.o.d -o CMakeFiles/graph_app.dir/tsp_solver.cpp.o -c /home/admin-debian/CLionProjects/graph_app/tsp_solver.cpp
+
+CMakeFiles/graph_app.dir/tsp_solver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/graph_app.dir/tsp_solver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin-debian/CLionProjects/graph_app/tsp_solver.cpp > CMakeFiles/graph_app.dir/tsp_solver.cpp.i
+
+CMakeFiles/graph_app.dir/tsp_solver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/graph_app.dir/tsp_solver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin-debian/CLionProjects/graph_app/tsp_solver.cpp -o CMakeFiles/graph_app.dir/tsp_solver.cpp.s
+
+CMakeFiles/graph_app.dir/tsp_widget.cpp.o: CMakeFiles/graph_app.dir/flags.make
+CMakeFiles/graph_app.dir/tsp_widget.cpp.o: /home/admin-debian/CLionProjects/graph_app/tsp_widget.cpp
+CMakeFiles/graph_app.dir/tsp_widget.cpp.o: CMakeFiles/graph_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graph_app.dir/tsp_widget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_app.dir/tsp_widget.cpp.o -MF CMakeFiles/graph_app.dir/tsp_widget.cpp.o.d -o CMakeFiles/graph_app.dir/tsp_widget.cpp.o -c /home/admin-debian/CLionProjects/graph_app/tsp_widget.cpp
+
+CMakeFiles/graph_app.dir/tsp_widget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/graph_app.dir/tsp_widget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/admin-debian/CLionProjects/graph_app/tsp_widget.cpp > CMakeFiles/graph_app.dir/tsp_widget.cpp.i
+
+CMakeFiles/graph_app.dir/tsp_widget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/graph_app.dir/tsp_widget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/admin-debian/CLionProjects/graph_app/tsp_widget.cpp -o CMakeFiles/graph_app.dir/tsp_widget.cpp.s
+
 # Object files for target graph_app
 graph_app_OBJECTS = \
 "CMakeFiles/graph_app.dir/graph_app_autogen/mocs_compilation.cpp.o" \
@@ -178,7 +220,10 @@ graph_app_OBJECTS = \
 "CMakeFiles/graph_app.dir/ui_node.cpp.o" \
 "CMakeFiles/graph_app.dir/ui_edge.cpp.o" \
 "CMakeFiles/graph_app.dir/mainwindow.cpp.o" \
-"CMakeFiles/graph_app.dir/adjacency_dialog.cpp.o"
+"CMakeFiles/graph_app.dir/adjacency_dialog.cpp.o" \
+"CMakeFiles/graph_app.dir/floyd_widget.cpp.o" \
+"CMakeFiles/graph_app.dir/tsp_solver.cpp.o" \
+"CMakeFiles/graph_app.dir/tsp_widget.cpp.o"
 
 # External object files for target graph_app
 graph_app_EXTERNAL_OBJECTS =
@@ -190,13 +235,16 @@ graph_app: CMakeFiles/graph_app.dir/ui_node.cpp.o
 graph_app: CMakeFiles/graph_app.dir/ui_edge.cpp.o
 graph_app: CMakeFiles/graph_app.dir/mainwindow.cpp.o
 graph_app: CMakeFiles/graph_app.dir/adjacency_dialog.cpp.o
+graph_app: CMakeFiles/graph_app.dir/floyd_widget.cpp.o
+graph_app: CMakeFiles/graph_app.dir/tsp_solver.cpp.o
+graph_app: CMakeFiles/graph_app.dir/tsp_widget.cpp.o
 graph_app: CMakeFiles/graph_app.dir/build.make
 graph_app: CMakeFiles/graph_app.dir/compiler_depend.ts
 graph_app: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.15
 graph_app: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.15
 graph_app: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.15
 graph_app: CMakeFiles/graph_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable graph_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/admin-debian/CLionProjects/graph_app/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable graph_app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graph_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

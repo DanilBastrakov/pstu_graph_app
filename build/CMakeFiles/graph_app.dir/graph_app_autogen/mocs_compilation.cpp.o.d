@@ -361,6 +361,17 @@ CMakeFiles/graph_app.dir/graph_app_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qrubberband.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h \
+ /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/moc_floyd_widget.cpp \
+ /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/../../../floyd_widget.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h \
+ /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/../../../data_graph.h \
  /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/moc_mainwindow.cpp \
  /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/../../../mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
@@ -379,9 +390,6 @@ CMakeFiles/graph_app.dir/graph_app_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPointF \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h \
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractbutton.h \
  /usr/include/c++/14/queue /usr/include/c++/14/deque \
  /usr/include/c++/14/bits/stl_deque.h /usr/include/c++/14/bits/deque.tcc \
  /usr/include/c++/14/bits/stl_queue.h \
@@ -404,7 +412,9 @@ CMakeFiles/graph_app.dir/graph_app_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qrect.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
- /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/../../../data_graph.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector \
+ /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/moc_tsp_widget.cpp \
+ /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/../../../tsp_widget.h \
+ /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/../../../tsp_solver.h \
  /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/moc_ui_node.cpp \
  /home/admin-debian/CLionProjects/graph_app/build/graph_app_autogen/EWIEGA46WW/../../../ui_node.h
